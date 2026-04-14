@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Event | Vaishnavi Caterers</title>
+    <style>
+        .booking-section { padding: 100px 10%; max-width: 800px; margin: 0 auto; }
+        .booking-section h1 { font-size: 3rem; color: var(--gold); margin-bottom: 2rem; text-align: center; }
+        .booking-form { background: var(--obsidian-light); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 20px; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: var(--gold); }
+        .form-group input, .form-group textarea, .form-group select { 
+            width: 100%; padding: 12px; background: var(--obsidian); border: 1px solid var(--glass-border); 
+            color: white; border-radius: 5px; outline: none; transition: var(--transition);
+        }
+        .form-group input:focus { border-color: var(--gold); }
+        .submit-btn { 
+            width: 100%; background: var(--gold); color: var(--obsidian); padding: 15px; 
+            border: none; border-radius: 5px; font-weight: 700; cursor: pointer; transition: var(--transition);
+        }
+        .submit-btn:hover { background: var(--gold-light); }
+    </style>
+  <script type="module" crossorigin src="/assets/main-Du4-DKTe.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DfKwiDei.css">
+</head>
+<body>
+    <header> 
+        <nav id="navibar">
+            <a id="logo" href="/">Vaishnavi Caterers</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About Us</a>
+                <a href="/services.html">Services</a>
+                <a href="/booking.html">Book Now</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h1>Reserve Your Date</h1>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label>Event Type</label>
+                    <select id="eventType">
+                        <option>Wedding</option>
+                        <option>Corporate Event</option>
+                        <option>Private Party</option>
+                        <option>Birthday</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Approx. Guest Count</label>
+                    <input type="number" id="guestCount" placeholder="e.g. 100">
+                </div>
+                <div class="form-group">
+                    <label>Event Date</label>
+                    <input type="date" id="eventDate">
+                </div>
+                <div class="form-group">
+                    <label>Special Requirements</label>
+                    <textarea id="requirements" rows="4" placeholder="Any dietary restrictions or specific dishes?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="bookWhatsAppBtn">Request Quote via WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2015-2026 Vaishnavi Caterers. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
